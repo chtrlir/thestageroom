@@ -1,22 +1,39 @@
 
+import { Routes, Route, Outlet } from 'react-router-dom'
 import './App.css'
 import Header from './component/Header'
 import Hero from './component/Hero'
+import About from './component/About'
+import Login from './component/Login'
+import NotFound from './component/NotFound'
 
 function App() {
  
 
-  return (
-    <>
-    <Header />
-    <Hero />
-   <div>
-    <h1>PROBLEM & PROMISE</h1>
-    <div>Creators weren’t meant to juggle five different apps just to put on a great show. TheStageRoom bundles the essentials—live streaming, ticketing, replays, scheduling, community, and payouts—into one smooth spotlight.
+  function MainLayout (){
+    return (
+      <>
+      <Header />
+      <Outlet />
+      </>
+    )
+  }
 
-</div>
-   </div>
-    </>
+  return (
+    <div>
+    <Routes>
+  <Route path='/' element={<MainLayout />}>
+ <Route path='/' element={<Hero />}/>
+ <Route path='/about' element={<About />}/>
+ <Route path='/login' element={<Login />}/> 
+  
+ </Route>
+ <Route path='*' element={<NotFound />}/> 
+   </Routes>
+  
+
+
+    </div>
   )
 }
 

@@ -5,7 +5,7 @@ body{
   margin: 0;
   background: #CCCCFF;
   font-family: "Poppins", sans-serif;
-   padding: 32px;
+   /* padding: 32px; */
 }
 
 
@@ -40,7 +40,7 @@ justify-content: space-between;
  .header-right ul {
   list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 64px;
     cursor: pointer;
 }
 
@@ -56,9 +56,16 @@ justify-content: space-between;
   height: 500px;
   width: 600px;
   border-radius: 20px;
+  margin-left: 164px;
 }
 
 .left-sec{
   width: 50%;
   padding: 32px;
+}
+
+.bg-ond{
+  background: #A3A3CC;
+  color: #292966;
+  padding: 32PX;
 }
