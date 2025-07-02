@@ -69,3 +69,23 @@ justify-content: space-between;
   color: #292966;
   padding: 32PX;
 }
+
+.nav-link {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-link.active {
+  border-bottom: 2px solid #fff;   
+}
+
+
+.login-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  gap: 32px;
+ 
+}
